@@ -1,0 +1,1 @@
+mongodb+srv://Sample_DB:sample123@cluster0.lfvcpn9.mongodb.net/users?retryWrites=true&w=majority
