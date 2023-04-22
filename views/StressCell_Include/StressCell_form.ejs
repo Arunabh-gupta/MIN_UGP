@@ -1,0 +1,50 @@
+<form action="/StressCell" method="post">
+
+    <div>
+        <label for="stress cell">STRESS CELL:</label>
+
+        <select name="stress_cell" id="stress cell">
+            <option value="stress cell 1">stress cell 1</option>
+            <option value="stress cell 2">stress cell 2</option>
+            <option value="stress cell 3">stress cell 3</option>
+            <option value="stress cell 4">stress cell 4</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="date">DATE & TIME:</label>
+        <input type="datetime-local" name="date" id="date">
+    </div>
+
+    <!-- <DIV>
+        <label for="time">TIME:</label>
+        <input type="time" name="time" id="time">
+    </DIV> -->
+    <DIV>
+        <label for="condition">CONDITION:</label>
+        WORKING <input type="radio" name="condition" id="condition" value="WORKING">
+        NOT-WORKING <input type="radio" name="condition" id="condition" value="NOT-WORKING">
+    </DIV><br>
+
+    <div id="working1">
+        <!-- <div>IF WORKING</div>  -->
+        <label for="value">VALUE:</label>
+        <input type="number" name="value" id="value" value="0">
+    </div> <br>
+
+    <div id="working2">
+
+        <label for="non-working">REASON:</label> 
+        <label for="">LOST INTO GOAF</label>
+        <input type="radio" name="reason" id="non-working" value="LOST INTO GOAF">
+        <label for="">MALFUNCTIONAL</label>
+        <input type="radio" name="reason" id="non-working" value="MALFUNCTIONAL">
+    </div>
+
+    <div>
+        <input type="submit" value="SUBMIT NOW" class="select">
+    </div>
+    <div>
+        <input type="reset" value="RESET NOW" class="select">
+    </div>
+</form>

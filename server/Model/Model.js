@@ -7,6 +7,10 @@ const schema = new mongoose.Schema({
     value: {
         type:Number,
         required: true
+    },
+    Date_Time: {
+        type: Date,
+        required: true
     } 
 })
 

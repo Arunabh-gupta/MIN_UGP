@@ -6,6 +6,14 @@ const app = express()
 const path = require('path')
 
 
+process.once('SIGUSR2', function () {
+    process.kill(process.pid, 'SIGUSR2');
+  });
+  
+  process.on('SIGINT', function () {
+    // this is only called on ctrl+c, not restart
+    process.kill(process.pid, 'SIGINT');
+  });
 const connectDB = require('./server/Database/Connection')
 
 dotenv.config({path:'config.env'})

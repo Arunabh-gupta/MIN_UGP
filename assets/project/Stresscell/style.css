@@ -1,0 +1,114 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+.upper{
+    display: flex;
+    background-color: rgb(249, 218, 231);
+    border: 2px black;
+     
+ 
+}
+.right{
+    padding-left: 1000px;
+   
+}
+.left{
+    padding-top: 10px;
+}
+.item{
+    padding: 1px 50px;
+}
+.frm{
+    background-color: aliceblue;
+    border: 2px black;
+    height: 100%;
+    width: 100%;
+    padding-left: 100px;
+
+}
+body{
+    /* background: url(stresscell.jpg) no-repeat center center; */
+    background-size: 100%;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+#navbar ul{
+display: flex;
+}
+#navbar{
+    position: relative;
+    background-color: rgb(99, 69, 69);
+}
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.4;
+
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+    }
+    #navbar ul li a{
+        color: white;
+     display: block;
+     padding: 3px 22px;
+     border-radius: 20px;
+     text-decoration: none;
+    
+        } 
+        #navbar ul li a:hover{
+            color:black;
+         background-color: white;
+        
+            } 
+        
+#stressCell{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+}
+#stressCell::before{
+    content: "";
+   
+     position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;}
+
+
+    .select{
+        font-size: 0.8rem;
+        padding: 15px;
+
+    }
+    .select{
+        padding: 6px 20px;
+        border: 2px solid white;
+        margin: 10px;
+        border-color: blueviolet;
+        cursor: pointer;
+    }
+.frm div{
+    padding-top: 7px;
+}
+.notWorking{
+    display: none;
+}
+    

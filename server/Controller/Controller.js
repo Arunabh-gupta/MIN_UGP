@@ -11,6 +11,7 @@ exports.create = (req, res) => {
     const new_entry = new dataDB({
         name: req.body.name,
         value: req.body.value,
+        Date_Time: req.body.Date_Time,
     })
     // console.log(entry.body.Date_Time);
     new_entry
@@ -49,6 +50,7 @@ exports.find = (req, res) => {
     else{
         dataDB.find()
         .then(entry => {
+            console.log(entry)
             res.send(entry)
         })
         .catch(err => {
@@ -103,3 +105,6 @@ exports.delete = (req, res) => {
             })
         })
 }
+
+
+
